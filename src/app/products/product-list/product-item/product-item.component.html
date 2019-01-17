@@ -1,0 +1,20 @@
+<ng-template [ngIf]="product">
+  <div class="product__item">
+    <div class="product__item__category">
+      {{ product.categoryName }}
+    </div>
+    <div class="product__item__name">
+      {{ product.productName }}
+    </div>
+    <div class="product__item__price">
+      {{ product.productPrice }}
+    </div>
+    <div>
+      <picture>
+        <source media="(min-width: 1200px)" [srcset]="productImage">
+        <source [srcset]="productImage">
+        <img class="d-block img-fluid" [src]="productImage" alt="productImage" sr-only="Product Image">
+      </picture>
+    </div>
+  </div>
+</ng-template>

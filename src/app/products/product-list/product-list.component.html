@@ -1,0 +1,7 @@
+<ng-template [ngIf]="products">
+    <div class="product-list__container">
+      <div *ngFor="let productsItem of products; index as i">
+        <app-product-item [itemIndex]="i" [product]="productsItem"></app-product-item>
+      </div>
+    </div>
+  </ng-template>

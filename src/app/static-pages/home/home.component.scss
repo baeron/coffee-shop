@@ -1,0 +1,18 @@
+.banner {
+    background-size: cover;
+    height: 920px !important;
+}
+
+
+@media (max-width: 1200px) {
+    .banner {
+      height: 920px !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        background-position: 50% 90% 50% 50%;
+    }
+}
